@@ -1,4 +1,4 @@
 include:
   - project: 'DevOps/gitlab-templates'
     ref: master
-    file: '/include/aptos/blockscout-backend.yml'
+    file: '/include/aptos/blockscout-frontend.yml'
