@@ -7,8 +7,10 @@ type Props = {
   new24: string;
 }
 
+const customBlue800 = '#28253E';
+
 const VerifiedContractsCountersItem = ({ name, total, new24 }: Props) => {
-  const itemBgColor = useColorModeValue('blue.50', 'blue.800');
+  const itemBgColor = useColorModeValue('blue.50', customBlue800);
   return (
     <Box
       w={{ base: '100%', lg: 'calc((100% - 12px)/2)' }}

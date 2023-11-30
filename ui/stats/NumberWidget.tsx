@@ -10,8 +10,10 @@ type Props = {
   isLoading?: boolean;
 }
 
+const customBlue800 = '#28253E';
+
 const NumberWidget = ({ label, value, isLoading, description }: Props) => {
-  const bgColor = useColorModeValue('blue.50', 'blue.800');
+  const bgColor = useColorModeValue('blue.50', customBlue800);
   const skeletonBgColor = useColorModeValue('blackAlpha.50', 'whiteAlpha.50');
   const hintColor = useColorModeValue('gray.600', 'gray.400');
 

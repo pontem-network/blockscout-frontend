@@ -22,6 +22,8 @@ type Props = {
   onClick?: () => void;
 }
 
+//const customHoverColor = '#946BEC';
+
 const NavLink = ({ item, isCollapsed, px, className, onClick }: Props) => {
   const isMobile = useIsMobile();
   const colors = useColors();
@@ -46,7 +48,7 @@ const NavLink = ({ item, isCollapsed, px, className, onClick }: Props) => {
       onClick={ onClick }
       _hover={{
         '& *': {
-          color: 'link_hovered',
+          color: isInternalLink && item.isActive ? colors.text.active : colors.text.hover,
         },
       }}
     >

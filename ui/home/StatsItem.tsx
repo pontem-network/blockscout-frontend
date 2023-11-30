@@ -26,6 +26,8 @@ const TOOLTIP_PROPS: Partial<TooltipProps> = {
   bgColor: 'blackAlpha.900',
 };
 
+const customBlue800 = '#28253E';
+
 const StatsItem = ({ icon, title, value, className, tooltipLabel, url, isLoading }: Props) => {
   const sxContainer: SystemStyleObject = {
     [`@media screen and (min-width: ${ breakpoints.lg }) and (max-width: ${ LARGEST_BREAKPOINT })`]: { flexDirection: 'column' },
@@ -35,7 +37,7 @@ const StatsItem = ({ icon, title, value, className, tooltipLabel, url, isLoading
     [`@media screen and (min-width: ${ breakpoints.lg }) and (max-width: ${ LARGEST_BREAKPOINT })`]: { alignItems: 'center' },
   };
 
-  const bgColor = useColorModeValue('blue.50', 'blue.800');
+  const bgColor = useColorModeValue('blue.50', customBlue800);
   const loadingBgColor = useColorModeValue('blackAlpha.50', 'whiteAlpha.50');
   const infoColor = useColorModeValue('gray.600', 'gray.400');
 
