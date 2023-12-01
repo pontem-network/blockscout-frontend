@@ -6,6 +6,9 @@ import getDefaultTransitionProps from '../utils/getDefaultTransitionProps';
 
 const baseStyle = defineStyle(getDefaultTransitionProps());
 
+const customLinkColor = '#FFFFFF';
+const customLinkHoverColor = '#946BEC';
+
 const variantPrimary = defineStyle((props) => {
   return {
     color: 'link',
@@ -25,13 +28,23 @@ const variantSecondary = defineStyle((props) => {
   };
 });
 
+const variantLumio= defineStyle((props) => {
+  return {
+    color: mode('gray.600', customLinkColor)(props),
+    _hover: {
+      color: mode('gray.600', customLinkHoverColor)(props),
+    },
+  };
+});
+
 const variants: Record<string, SystemStyleInterpolation> = {
   primary: variantPrimary,
   secondary: variantSecondary,
+  lumio: variantLumio,
 };
 
 const defaultProps = {
-  variant: 'primary',
+  variant: 'lumio',
 };
 
 const Link = defineStyleConfig({
