@@ -29,7 +29,7 @@ Thanks for showing interest to contribute to Blockscout. The following steps wil
 
 ## Toolkit
 
-We are using following technology stack in the project
+We are using the following technology stack in the project
 - [Yarn](https://yarnpkg.com/) as package manager
 - [ReactJS](https://reactjs.org/) as UI library
 - [Next.js](https://nextjs.org/) as application framework
@@ -59,7 +59,7 @@ And of course our premier language is [Typescript](https://www.typescriptlang.or
 ## Adding new dependencies
 For all types of dependencies:
 - **Do not add** a dependency if the desired functionality is easily implementable
-- If adding a dependency is necessary, please be sure that is is well-maintained and trustworthy
+- If adding a dependency is necessary, please be sure that it is well-maintained and trustworthy
 
 &nbsp;
 
