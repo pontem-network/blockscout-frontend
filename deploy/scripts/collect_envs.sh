@@ -15,7 +15,7 @@ prefix="NEXT_PUBLIC_"
 make_registry_file() {
   output_file=".env.registry"
 
-  # Check if file already exists and empty its content if it does
+  # Check if the file already exists and empty its content if it does
   if [ -f "$output_file" ]; then
     > "$output_file"
   fi
@@ -29,7 +29,7 @@ make_registry_file() {
 save_build-time_envs() {
   output_file=".env"
 
-  # Check if file already exists and empty its content if it does or create a new one
+  # Check if the file already exists and empty its content if it does or create a new one
   if [ -f "$output_file" ]; then
     > "$output_file"
   else
